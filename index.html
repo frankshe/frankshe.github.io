@@ -120,7 +120,7 @@
                     <div class="about-content">
                         <img src="assets/img/creative/meridian.jpg" class="img-responsive img-centered" alt="" style="border-radius: 100%; border-color:white; border-width:3px; border-style:solid; height:180px">
                         <br />
-                        <p>In my first job out of college, I gained experience with <strong>Object Oriented Principles</strong>, <strong>RESTful APIs</strong>, and <strong>Full Stack Development</strong> in an <strong>Agile</strong> environment</p>
+                        <p>In my first job out of college, I gained hands-on experience with <strong>Object Oriented Principles</strong>, <strong>RESTful APIs</strong>, and <strong>Full Stack Development</strong>.
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".4s">
@@ -134,7 +134,7 @@
                     <div class="about-content">
                            <img src="assets/img/creative/anderson.jpg" class="img-responsive img-centered" alt="" style="border-radius: 100%; border-color:white; border-width:3px; border-style:solid; height:180px">
                         <br />
-                        <p>After passing the semester's <strong>MGMT 180</strong> course with the highest score, I was invited to work with the professor in future course offerings.</p>
+                        <p>After passing <strong>MGMT 180</strong> with the top score, I was invited to work with the professor in future course offerings.</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".6s">
@@ -326,8 +326,20 @@
     <script src="assets/js/plugins/wow/wow.min.js"></script>
     <script src="assets/js/contact_me.js"></script>
     <script src="assets/js/plugins/jqBootstrapValidation.js"></script>
-    <!-- Vitality Theme Scripts -->
     <script src="assets/js/vitality.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Disable full page
+            $("body").on("contextmenu",function(e){
+                return false;
+            });
+            
+            //Disable part of page
+            $("#id").on("contextmenu",function(e){
+                return false;
+            });
+        });
+    </script>
 </body>
 
 </html>
